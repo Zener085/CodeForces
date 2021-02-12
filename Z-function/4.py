@@ -11,7 +11,7 @@ def t_in_s(a: str, b: str) -> int:
     for i in range(len(a) - c):
         if a[i:c] == b:
             count += len(a) - len(a[:i+c])
-            continue
+            break
     return counting(len(a)) - count
 
 
